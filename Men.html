@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Threads - Men</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0F1B4C; 
+            color: #fff;
+        }
+    
+        #wc h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: #2C3E75;
+            color: #FFD700;
+            font-size: 28px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+    
+        #category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #FFD700; 
+            font-size: 50px;
+        }
+    
+        #category p {
+            margin: 0 15px;
+            font-size: 36px;
+            cursor: pointer;
+            color: #2C3E75; 
+        }
+    
+        #category p:hover {
+            color: red; 
+        }
+    
+        #category .active {
+            font-weight: bold;
+            color: #0F1B4C; 
+        }
+    
+        #category a {
+            font-size: 36px;
+            text-decoration: none;
+            color: #2C3E75; 
+            margin-left: auto;
+            padding-right: 20px;
+        }
+    
+        #men-header {
+            background-image: url("https://assets.vogue.com/photos/61e9c43c8aa98afba69ec2e8/master/w_2560%2Cc_limit/00_story.jpg");
+            background-size: cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFD700; 
+            font-size: 80px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-family: 'Playfair Display', serif;
+        }
+    
+        #men-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #192A56; 
+        }
+    
+        .men-product {
+            width: 25%;
+            margin: 20px;
+            background-color: #3B4F87; 
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    
+        .men-product img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease; 
+        }
+    
+        .men-product img:hover {
+            transform: scale(1.05); 
+        }
+    
+        .men-product h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #FFD700; 
+        }
+    
+        .men-product p {
+            font-size: 18px;
+            color: #fffdfd;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    
+        #today-container {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="wc">
+        <h2>WELCOME TO METRO THREADS! DISCOVER THE FRESHEST STYLE IN STREETWEAR</h2>
+    </div>
+    <div id="category">
+        <a href="Women.html"><p id="women">WOMEN</p></a> 
+        <a href="Kids.html"><p id="kids">KIDS</p></a>
+        <p id="men" class="active">MEN</p>
+        <div id="today-container">
+            <p id="today">TODAY'S TREND</p>
+        </div>
+        <a href="MetroThreads.html">HOMEPAGE</a>
+    </div>
+    <div id="men-header">
+        <h1>Men's Fashion</h1>
+    </div>
+    <div id="men-products">
+        <div class="men-product">
+            <img src="https://i.pinimg.com/736x/45/62/a5/4562a5efa8c1eb07a9ffe84bfc76093d.jpg" alt="Adidas Shoes">
+            <h3>Stylish Footwear</h3>
+            <p>Yeezy Boost 350 v2 "Israfil"</p>
+        </div>
+        <div class="men-product">
+            <img src="https://media.karousell.com/media/photos/products/2024/2/6/vintage_carhartt_duck_jacket_m_1707236300_04c7b1b2_progressive.jpg" alt="Leather Jacket">
+            <h3>Outerwear</h3>
+            <p>Carhartt Duck Jacket</p>
+        </div>
+        <div class="men-product">
+            <img src="https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/425974/item/goods_35_425974.jpg?width=494" alt="T-shirt">
+            <h3>Casual Wear</h3>
+            <p>Uniqlo Oversized Crew Neck Half Sleeve T-Shirt</p>
+        </div>
+        <div class="men-product">
+            <img src="https://ithk-pro-itmall-item.oss-cn-hongkong.aliyuncs.com/2/product/LLSJNMUASEYXLGYX/LLSJNMUASEYXLGYX-pdp-6.jpg?x-oss-process=image/resize,m_pad,w_570,h_712" alt="Denim Jeans">
+            <h3>Denim</h3>
+            <p>Baggy Denim Pants</p>
+        </div>
+        <div class="men-product">
+            <img src="https://cdn.mainlinemenswear.co.uk/w_900,h_900/f_auto,q_auto/mainlinemenswear/shopimages/products/197372/Mainimage.jpg" alt="Adidas Shorts">
+            <h3>Sportswear</h3>
+            <p>Adidas 3-Stripes Vest</p>
+        </div>
+        <div class="men-product">
+            <img src="https://www.louisvuitton.com/images/is/image/lv/BC_SLG_SLDJuly24_02_DII.jpg" alt="Leather Wallet">
+            <h3>Accessories</h3>
+            <p>Leather Wallet</p>
+        </div>
+    </div>
+</body>
+</html>
