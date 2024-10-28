@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Threads</title>
+    <style>
+        body {
+            background-color: #121F30;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        #wc {
+            background-color: #FF4136;
+            font-size: 20px;
+            text-align: center;
+            padding: 2px 0; 
+            color: rgb(0, 0, 0);
+            height: 40px; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            line-height: 0px; 
+        }
+
+        #category {
+            background-color: #404040;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        #category p {
+            display: inline-block;
+            margin: 0 100px;
+            font-size: 60px; 
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            color: white;
+            line-height: 40px; 
+        }
+
+        #category p:hover {
+            color: #FF4136;
+        }
+
+        #rect {
+            width: 80%;
+            height: 500px;
+            background-color: #404040;
+            margin: 50px auto;
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .product-container {
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            height: 300px;
+            position: absolute;
+            bottom: -150px;
+            left: 5%;
+        }
+
+        .product-rect {
+            width: 22%;
+            height: 100%;
+            background-color: #BFBFBF;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-rect:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .product-img:hover img {
+            transform: scale(1.1);
+        }
+
+        #step {
+            font-size: 80px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 150px;
+            text-transform: uppercase;
+            letter-spacing: 10px;
+            margin-left: 25px;
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 300;
+            font-style: normal;
+        }
+
+        #go {
+            font-size: 34px;
+            color: #ffffff;
+            max-width: 100%;
+            line-height: 1.5;
+            position: absolute; 
+            top: 50%; 
+            left: 0; 
+            letter-spacing: 8px;
+            margin-left: 25px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #inner-rect {
+            position: absolute;
+            right: 120px;
+            top: 80px;
+            width: 650px;
+            height: 175px;
+            background-color: #ff0000;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 60px;
+            font-weight: bold;
+            color: #ffffff;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+            padding: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            line-height: 1.2;
+        }
+    </style>
+</head>
+<body>
+    <div id="wc">
+        <h2>WELCOME TO METRO THREADS! DISCOVER THE FRESHEST STYLE IN STREETWEAR</h2>
+    </div>
+    <div id="category">
+        <a href="Women.html"><p id="women">WOMEN</p></a> 
+        <a href="Kids.html"><p id="kids">KIDS</p></a>
+        <a href="Men.html"><p id="men">MEN</p></a>
+    </div>
+    <div id="rect">
+        <div id="step" class="ibm-plex-sans-thin">STEP INTO STYLE<br>
+            WITH METRO <br>
+            THREADS!</div>
+        <div id="go">YOUR GO-TO FOR THE LATEST<br>
+            IN STREETWEAR AND FASHION</div>
+        <div id="inner-rect">METRO THREADS</div>
+        <div class="product-container">
+            <div class="product-rect">
+                <div class="product-img">
+                    <img src="https://aftermarket.ph/uploads/products/190375-img1-1689068253.webp" alt="">
+                </div>
+            </div>
+            <div class="product-rect">
+                <div class="product-img">
+                    <img src="https://i.pinimg.com/736x/c3/bf/c7/c3bfc7a62a7d422ab044a358d1a388e2.jpg" alt="">
+                </div>
+            </div>
+            <div class="product-rect">
+                <div class="product-img">
+                    <img src="https://www.asphaltgold.com/cdn/shop/files/87b538aa9fecf5af03def0c1e458783044803e63_1201A019_108_Asics_GEL_Kayano_14_Cream_Black_sm_4_768x768_crop_center.jpg?v=1721663741" alt="">
+                </div>
+            </div>
+            <div class="product-rect">
+                <div class="product-img">
+                    <img src="https://img.freepik.com/free-photo/portrait-cute-little-kid-boy-stylish-jeans-clothes-looking-camera-against-white-studio-wall-kids-fashion-concept_155003-21550.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
