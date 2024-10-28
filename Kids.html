@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metro Threads - Kids</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+    
+        #wc h2 {
+            text-align: center;
+            padding: 20px;
+            background-color: #2F3C7E;
+            color: #FFD700;
+            font-size: 28px;
+            margin: 0;
+            letter-spacing: 1px;
+        }
+    
+        #category {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #59788E;
+            font-size: 50px;
+        }
+    
+        #category p {
+            margin: 0 15px;
+            font-size: 36px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+    
+        #category .active {
+            font-weight: bold;
+            color: #FFD700;
+        }
+    
+        #category a {
+            font-size: 36px;
+            text-decoration: none;
+            color: #ffffff;
+            margin-left: auto;
+            padding-right: 20px;
+        }
+    
+        #kids-header {
+            background-image: url("https://lunamag.com/wp-content/uploads/2018/04/booso.jpg");
+            background-size: cover;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #FFD700;
+            font-size: 80px;
+            font-weight: bold;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            font-family: 'Playfair Display', serif;
+        }
+    
+        #kids-products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 40px 20px;
+            background-color: #97A1D9;
+        }
+    
+        .kids-product {
+            width: 25%;
+            margin: 20px;
+            background-color: #A69D98;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+    
+        .kids-product img {
+            width: 100%;
+            height: 550px;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: transform 0.3s ease; 
+        }
+    
+        .kids-product img:hover {
+            transform: scale(1.05); 
+        }
+    
+        .kids-product h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 10px;
+            color: #FFD700;
+        }
+    
+        .kids-product p {
+            font-size: 18px;
+            color: #fffdfd;
+            margin-top: 10px;
+            font-weight: bold;
+            transition: color 0.3s ease, text-decoration 0.3s ease;
+        }
+    
+        .kids-product p:hover {
+            color: #FFD700; 
+            text-decoration: underline; 
+        }
+    
+        #today-container {
+            flex: 1;
+            text-align: center;
+            font-weight: bold;
+            margin-left: -200px;
+        }
+    </style>
+</head>
+<body>
+    <div id="wc">
+        <h2>WELCOME TO METRO THREADS! DISCOVER THE FRESHEST STYLE IN KIDSWEAR</h2>
+    </div>
+    <div id="category">
+        <a href="Women.html"><p id="women">WOMEN</p></a>
+        <p id="kids" class="active">KIDS</p>
+        <a href="Men.html"><p id="men">MEN</p></a>
+        <div id="today-container">
+            <p id="today">TODAY'S TREND</p>
+        </div>
+        <a href="index.html">HOMEPAGE</a>
+    </div>
+    <div id="kids-header">
+        <h1>Kids' Fashion</h1>
+    </div>
+    <div id="kids-products">
+        <div class="kids-product">
+            <img src="https://dynamic.zacdn.com/F8U4l-wJq69tEstTWjsUW1pNBDQ=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/gap-1966-5558382-1.jpg" alt="Gap Shirt">
+            <h3>Fun T Shirts</h3>
+            <p>Gap Shirt</p>
+        </div>
+        <div class="kids-product">
+            <img src="https://i5.walmartimages.com/seo/Girls-Winter-Clothes-Size-6-Years-Summer-Dress-10-Girl-s-Casual-Scoop-Neck-Sleeveless-Flowy-Print-Plain-Sundress-Big-Girl-12-Dresses-Sweater_077c21d7-b921-43bc-9be4-2fc2514788e2.a88f40d38522ee987b81b4bf0d3408cc.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="Casual Dress Summer Scoop Neck">
+            <h3>Summer Dresses</h3>
+            <p>Casual Dress Summer Scoop Neck </p>
+        </div>
+        <div class="kids-product">
+            <img src="https://www.mumkins.in/cdn/shop/products/6038e38a26df1.jpg?v=1629349665" alt="Ripped Patterned Jeans">
+            <h3>Stylish Jeans</h3>
+            <p>Ripped Patterned Jeans</p>
+        </div>
+        <div class="kids-product">
+            <img src="https://shopnicekicks.com/cdn/shop/products/442be383cb02966da15514bcbfb5bf2f_1024x1024.jpg?v=1683661053" alt="Air Jordan 1 Mid">
+            <h3>Comfortable Sneakers</h3>
+            <p>Air Jordan 1 Mid</p>
+        </div>
+        <div class="kids-product">
+            <img src="https://dynamic.zacdn.com/kWXY-gALoy_FO30fiQimv3wLbOU=/filters:quality(70):format(webp)/https://static-ph.zacdn.com/p/old-navy-2876-6054903-1.jpg" alt="Old Navy Jacket">
+            <h3>Cool Jacket</h3>
+            <p>Old Navy Jacket</p>
+        </div>
+        <div class="kids-product">
+            <img src="https://images.marleylilly.com/profiles/mlk-product-detail/product/94364/Ynd-8.28-2-engraved-kids-bracelet.jpg" alt="Beaded Bracelet">
+            <h3>Fun Accessories</h3>
+            <p>Beaded Bracelet</p>
+        </div>
+    </div>
+</body>
+</html>
